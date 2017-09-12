@@ -1,0 +1,139 @@
+So you have been choosen to update the JDroids site, congrats! In order to update this site there are a few things you have to do, if it is a new season; if it's not a new season then skip to the next section.
+
+------------------------
+
+New Season Instructions:
+
+1. Take the img folder and copy it to your desktop
+
+2. On the desktop rename that folder to img2 or whatever number comes next in the series
+
+3. Once you do that, cut the renamed img folder and paste it into the JDroids7026-master folder. If you do not have that folder and you are doing an online upload, then upload the new img folder to the main loading page (the main repository that has all of the folders)
+
+4. Go into the css folder and copy the layout.min folder (again paste this onto your desktop)
+
+5. Rename (the one on your desktop) layout.min file to layout.min2 or whatever number comes next in the series (DO NOT ADD .css at the end of the file name it will autofill)
+
+6. Open up the new layout.min file you created search for img/ and rename all img/ with img(your number of the img folder you created earlier)/ then save the file
+
+7. Cut the new layout.min file off of your desktop and paste it into the css folder. If you are doing an online upload, then open up the css folder and click upload files. Then upload the new layout.min file you named (from the desktop)
+
+8. Copy index.html onto the desktop and rename it to past2.html or whatever number comes next into the series (it is important that you include .html at the end of the name of this file or else it will not be a website page and work with the css files). 
+
+9. Open up this file and hit Ctrl+F search for img/ rename all img/ with img(your number of the img folder you created earlier)/ Once this has been completed look for the comment  <!-- THEME STYLES -->
+ at the top of the page and rename this segment of code to   <link href="css/layout.min(the number of the css file you named earlier).css" rel="stylesheet" type="text/css" />
+
+10. Upload this onto the site (main repository)
+
+11. Open up the index.html file and look for the navbar this comment will be before it <!-- Collect the nav links, forms, and other content for toggling -->
+
+12. Add the past.html file you created 
+
+<ul>
+	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="YOUR HTML FILE GOES HERE"></a>YOUR YEAR GOES HERE</li>
+	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="past.html">2017</a></li>
+	<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="past0.html">2016</a></li>
+</ul>
+
+13. Save the file and upload it to the main repository
+
+------------------------------------
+
+Updating the Site During the Season:
+
+1. Update the current pictures on the page (go into index.html) for all of the photos in about us look for code like this under the <!-- Our Mission--> comment:
+
+<img class="img-responsive wow fadeIn" src="img/Meet20162.jpg" alt="Latest Products Image" data-wow-duration=".3" data-wow-delay=".1s">
+
+Change the photos by going directly into the img folder and searching for that exact picture. To edit it I would open it up in paint (if you are as bad at photoshop as I was) and paste the new photo over the old one. NOTE The new photo MUST BE THE SAME SIZE AS THE OLD PHOTO, HAVE THE SAME NAME, and BE SAVED AS THE SAME FORMAT (such as .jpeg, .jpg, .gif, .png, and so on). Save it directly to the img folder (this will make your life easier trust me). When you are done with the photos reupload the img file to github.
+
+To change the background photos of the team you have to go into the img folder and edit the following photos:
+
+inspire.png
+Qualifiers2016.jpg
+
+NOTE The new photo MUST BE THE SAME SIZE AS THE OLD PHOTO, HAVE THE SAME NAME, and BE SAVED AS THE SAME FORMAT (such as .jpeg, .jpg, .gif, .png, and so on). Save it directly to the img folder (this will make your life easier trust me). When you are done with the photos reupload the img file to github.
+
+2. Update the team profiles
+
+Look for the <!-- Masonry Grid --> comment, underneath is there should be names in comments of the members of the team. The first name in comments is the Co Captain (don't ask this was the only way it would fit), the second name is the Captain, and so on.
+
+To edit the pictures look for something like this:
+
+<img class="full-width img-responsive" src="img/kelly.png" alt="Kelly">
+
+Search for the image in the img file and edit it to be the current team members photo. Change the alt text to say the current team member's name, but keep the "" around the name.
+
+NOTE The new photo MUST BE THE SAME SIZE AS THE OLD PHOTO, HAVE THE SAME NAME, and BE SAVED AS THE SAME FORMAT (such as .jpeg, .jpg, .gif, .png, and so on). Save it directly to the img folder (this will make your life easier trust me). When you are done with the photos reupload the img file to github. 
+
+3. Changing the text of the team profiles
+
+Look for code like this:
+
+<div class="margin-b-30">
+	<h3 class="margin-b-5">Kelly Wallert</h3>
+	<span>Co- Captain</span>
+</div>
+
+Change the text in <h3 class="margin-b-5">Kelly Wallert</h3> to the current team member's name. In this case you would replace Kelly Wallert with the new name. Leave the span alone.
+
+Look for code like this:
+
+<div class="margin-t-10 sm-margin-t-0">
+	<p>My name is Kelly Wallert and I am a 17 year old senior at Wayne Hills High School. My personal interests include being a Peer Minister, becoming a member of the steering committie of the NJ STEM Girls of North Jersey, sewing, playing the flute, and helping create (and leading) a team that won the Congressional App Challenge . I was introduced to the team through Anthony Tazzetto, the Captain of the JDroids, and he told me how there is an entire community around robotics. I am currently the Co- Captain of the JDroids, and using my skills in Java, HTML/CSS, VB, C++, and C# to help solve real world problems that we have when programming the robot.</p>
+</div>
+
+Change the text inside the <p> </p> to the team member's description from the Engineering notebook.
+
+
+Look for code like this:
+
+<div class="margin-t-10 sm-margin-t-0">
+	<p class="margin-b-5"><strong>Years on the team:</strong> 1</p>
+	<p class="margin-b-5"><strong>Co-Captain:</strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>Programmer: </strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>Project Manager: </strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>Congressional App Team Leader:</strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>NJ STEM Girls:</strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>NJ STEM Girls Steering Comittee:</strong> 2016 - 2017</p>
+</div>
+
+Change the text for years on the team (comes after the </strong>), the title text after </strong> (in this case it would be the 2016 - 2017),  programmer (if they are not a programmer change it to their title) and again the text after </strong>, and if there are no other accomplishments having to do with the FTC delete the last p classes (in this case we would get rid of 
+
+	<p class="margin-b-5"><strong>Project Manager: </strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>Congressional App Team Leader:</strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>NJ STEM Girls:</strong> 2016 - 2017</p>
+	<p class="margin-b-5"><strong>NJ STEM Girls Steering Comittee:</strong> 2016 - 2017</p>
+
+but leave the </div> alone). If they have more accomplishments then add another p class. In this case we would add another class under this:
+
+<p class="margin-b-5"><strong>NJ STEM Girls Steering Comittee:</strong> 2016 - 2017</p>
+
+and the addition would look something like this
+
+<p class="margin-b-5"><strong>NJ STEM Girls Steering Comittee:</strong> 2016 - 2017</p>
+<p class="margin-b-5"><strong>ADDITION:</strong> 2016 - 2017</p>
+
+Make sure that there is a </div> after the last </p> in this section.
+
+Do the same for all the team mates on the team. 
+
+3. Change the pictures in More About us
+
+Look for the following image in the img folder CoguarsandJDroids.jpg and Meet20162.jpg open the image and change it.
+
+NOTE The new photo MUST BE THE SAME SIZE AS THE OLD PHOTO, HAVE THE SAME NAME, and BE SAVED AS THE SAME FORMAT (such as .jpeg, .jpg, .gif, .png, and so on). Save it directly to the img folder (this will make your life easier trust me). When you are done with the photos reupload the img file to github. 
+
+4. Update the Mentors Page
+
+Update the photo of all of the mentors by looking for mentors.png in the img file. Edit that photo and (I'm sorry I have to add this in case you forget)... 
+
+NOTE The new photo MUST BE THE SAME SIZE AS THE OLD PHOTO, HAVE THE SAME NAME, and BE SAVED AS THE SAME FORMAT (such as .jpeg, .jpg, .gif, .png, and so on). Save it directly to the img folder (this will make your life easier trust me). When you are done with the photos reupload the img file to github.
+
+Go through the code, and if a mentor is no longer with the team then do not delete their name and div instead comment their section out by doing <!-- --> around the text to get the bio of the mentor you can find it in the engineering notebook.
+
+5. Edit the FLL Team information
+
+
+
+If you need any help contact Kelly, you'll find my email on my github (https://klw43325rocks.github.io/kwall/).
